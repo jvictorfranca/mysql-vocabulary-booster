@@ -10,6 +10,6 @@ INNER JOIN departments AS de
 ON jh.DEPARTMENT_ID = de.DEPARTMENT_ID
 INNER JOIN jobs AS jb
 ON jh.JOB_ID = jb.JOB_ID
-WHERE em.EMAIL = email; 
+WHERE em.EMAIL = email
 END $$
 DELIMITER ;
