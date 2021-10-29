@@ -6,7 +6,7 @@ RETURNS INT READS SQL DATA
 BEGIN
     DECLARE quantity_of_employees INT;
     SELECT COUNT(HIRE_DATE) FROM employees
-WHERE MONTH(HIRE_DATE) = 5 && YEAR(HIRE_DATE) = 1980
+WHERE MONTH(HIRE_DATE) = mes && YEAR(HIRE_DATE) = ano
 INTO quantity_of_employees;
     RETURN quantity_of_employees;
 END $$
